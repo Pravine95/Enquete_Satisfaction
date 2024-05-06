@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fin">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="149dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="116dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/enquete" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="32dp"
+        android:background="#FF9800"
+        android:text="Ecole IRIS - 8rue des 2 coussins"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="190dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iris_logo" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="258dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="4dp"
+        android:text="Resultat"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/idSmiley"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ListView
+        android:id="@+id/idListe"
+        android:layout_width="385dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/idRetour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSmiley" />
+
+    <Button
+        android:id="@+id/idRetour"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="13dp"
+        android:text="Retour"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idListe" />
+
+    <ImageView
+        android:id="@+id/idSmiley"
+        android:layout_width="133dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="154dp"
+        app:layout_constraintBottom_toTopOf="@+id/idListe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@drawable/smiley_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
